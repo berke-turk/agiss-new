@@ -23,7 +23,7 @@ export default async function Component({ lang, query, metaDataUpdate }: { lang:
             <div className="frame">
                 <div className="list">
                     {products.map((value, index) => (
-                        <a key={"products-" + index} href={'/' + lang.toLocaleLowerCase() + '/' + `${lang == Languages.TR ? 'urun' : 'product'}` + '/' + value.relationships.content.seo} className="slider-item">
+                        <a key={"products-" + index} href={'/' + lang.toLocaleLowerCase() + '/' + `${lang == Languages.TR ? 'urun' : 'product'}` + '/' + value.relationships.content.seo} className="big-item">
                             <div className="product-image">
                                 <img src={Consts.cdn_base + '/doc/img/' + value.relationships.images?.[0]?.file} alt={value.relationships.content.title} />
                             </div>

@@ -522,27 +522,28 @@ a {
   flex-wrap: wrap;
 }
 
-.slider-item {
+.big-item{
   width: 280px;
   max-width: 280px;
   padding: 10px;
 }
 
 .product-image {
+  width: 280px;
   overflow: hidden;
   margin-bottom: 15px;
   border: 1px solid #e0e0e0;
 }
 
 .product-image img {
-  width: 100%;
+  width: 280px;
   height: 280px;
   max-height: 280px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
 
-.slider-item:hover .product-image img {
+.big-item:hover .product-image img {
   transform: scale(1.1);
 }
 
@@ -572,6 +573,11 @@ a {
   color: #001B70;
   margin: 0;
 
+}
+
+.slider-item{
+  width: 500px;
+  max-width: 500px;
 }
 
 .new-products {
@@ -610,6 +616,16 @@ a {
 
 /* Önceki CSS'e ek olarak */
 .slider-item {
+  text-decoration: none;
+  /* Link altı çizgisini kaldır */
+  color: inherit;
+  /* Varsayılan link rengini kaldır */
+  display: block;
+  /* Link bloğunu tam genişlikte yap */
+  transition: transform 0.2s ease;
+}
+
+.big-item {
   text-decoration: none;
   /* Link altı çizgisini kaldır */
   color: inherit;
