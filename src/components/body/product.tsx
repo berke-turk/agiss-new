@@ -18,7 +18,6 @@ import Consts from "@/lib/consts";
 import { useLang } from "@/lib/context/lang";
 
 export default async function Component({ lang, seo }: { lang: string, seo: string }) {
-
     // Fetch Product Data
     let product = await getProduct(seo);
     if (product) {

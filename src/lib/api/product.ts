@@ -68,6 +68,7 @@ export const details = async (id: string): Promise<ProductGet | null> => {
             headers: {
                 'Authorization': 'Bearer ' + Cookies.get('access_token')
             },
+            cache: 'no-cache'
         });
         let result: FetcHModel<ProductGet> = await response.json() as FetcHModel<ProductGet>;
 
